@@ -1,0 +1,43 @@
+# AutoML-Agent — minimal runtime dependencies (import scan, Python 3.11)
+# Covers: agent_manager, data_agent, model_agent, operation_agent, prompt_agent, utils
+# Does NOT include optional task-specific PyTorch extras (see windows_requirements.txt)
+
+# --- LLM / orchestration ---
+openai==1.30.2
+httpx>=0.23.0,<0.28.0
+num2words==0.5.13
+pandas==2.2.2
+
+# --- Web search, datasets, papers ---
+requests==2.32.2
+beautifulsoup4==4.12.3
+google-search-results==2.4.2
+kaggle==1.6.12
+arxivloader==1.0.2
+validators==0.28.0
+huggingface_hub==0.22.2
+
+# --- RAG / retrieval (utils/embeddings.py, agent_manager/retriever.py) ---
+langchain==0.2.1
+langchain_community==0.2.1
+langchain_text_splitters==0.2.0
+faiss-cpu==1.8.0
+rank_bm25==0.2.2
+sentence-transformers==2.7.0
+pdfminer.six==20231228
+
+# --- Data hub lookups (lazy imports in data_agent/retriever.py) ---
+openml==0.14.2
+ucimlrepo==0.0.6
+
+# --- ML stack for prompt_pool templates & generated code ---
+numpy==1.26.4
+scipy==1.12.0
+scikit-learn==1.4.1.post1
+torch==2.3.0
+gradio==4.31.5
+
+# --- Notebook entry point ---
+jupyter==1.0.0
+ipykernel==6.29.4
+nbformat==5.10.4

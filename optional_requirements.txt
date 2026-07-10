@@ -1,0 +1,2 @@
+# Optional extras — install only when needed
+tensorflow-datasets==4.9.4

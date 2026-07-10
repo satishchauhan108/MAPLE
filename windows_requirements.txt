@@ -1,0 +1,16 @@
+# AutoML-Agent — full Windows 11 / Python 3.11 compatible stack
+# Installs minimal core + task-specific PyTorch ecosystem packages.
+# Excludes Linux-only packages: vllm, metagpt, spacy, autogluon, and unused research deps.
+
+-r minimal_requirements.txt
+
+# Aligned PyTorch companion wheels (must match torch==2.3.0)
+torchvision==0.18.0
+torchaudio==2.3.0
+
+# Task-specific prompt_pool templates (lazy imports in retrievers / templates)
+torch_geometric==2.5.3
+torchtext==0.18.0
+
+# NOTE: tensorflow-datasets pulls a large TensorFlow stack on Windows.
+# Install only if you need TF dataset lookup: pip install tensorflow-datasets==4.9.4
