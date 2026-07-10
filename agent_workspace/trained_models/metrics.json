@@ -1,0 +1,54 @@
+{
+  "dataset_path": "C:\\Users\\satis\\OneDrive\\Pictures\\Desktop\\MAPLE\\automl-agent\\agent_workspace\\datasets\\test_upload.csv",
+  "target_column": "quality",
+  "feature_columns": [
+    "color",
+    "size",
+    "weight",
+    "ripeness"
+  ],
+  "n_features": 4,
+  "n_classes": 2,
+  "n_samples": 10,
+  "accuracy": 1.0,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "confusion_matrix": [
+    [
+      1,
+      0
+    ],
+    [
+      0,
+      1
+    ]
+  ],
+  "classification_report": {
+    "bad": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 1.0
+    },
+    "good": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 1.0
+    },
+    "accuracy": 1.0,
+    "macro avg": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 2.0
+    },
+    "weighted avg": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 2.0
+    }
+  }
+}

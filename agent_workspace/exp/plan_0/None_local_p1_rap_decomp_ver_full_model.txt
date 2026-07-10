@@ -1,0 +1,59 @@
+Here are the detailed steps for modeling and optimization parts:
+
+**Step 1: Retrieve a list of well-performing candidate ML models and AI algorithms**
+
+To find high-performance models, we will analyze the dataset characteristics and problem requirements. Based on these factors, we can choose suitable classical machine learning algorithms such as decision trees, random forests, or support vector machines (SVMs). We can use libraries like Scikit-learn to implement these algorithms.
+
+For example, if the dataset has a large number of features, we might choose a random forest algorithm due to its ability to handle high-dimensional data. If the dataset is imbalanced, we might choose an SVM algorithm due to its ability to handle class imbalance problems.
+
+**Step 2: Perform hyperparameter optimization**
+
+To optimize the hyperparameters of the candidate models or algorithms, we will use techniques like grid search or random search. Grid search involves systematically varying each hyperparameter across a range of values and evaluating the model's performance on a validation set. Random search involves randomly sampling from the hyperparameter space and evaluating the model's performance.
+
+We can use libraries like Scikit-learn, Hyperopt, or Optuna to perform hyperparameter optimization. For example, if we choose a random forest algorithm, we might optimize the following hyperparameters:
+
+* `n_estimators`: The number of trees in the forest (optimized value: 100)
+* `max_depth`: The maximum depth of each tree (optimized value: 10)
+* `min_samples_split`: The minimum number of samples required to split an internal node (optimized value: 2)
+* `min_samples_leaf`: The minimum number of samples required to be at a leaf node (optimized value: 1)
+
+**Step 3: Extract useful information and underlying characteristics**
+
+To extract useful information and understand the underlying characteristics of the candidate models or algorithms, we will apply dimensionality reduction techniques such as PCA (Principal Component Analysis) or t-SNE (t-distributed Stochastic Neighbor Embedding). We can also use feature selection methods like recursive feature elimination (RFE) to select the most relevant features.
+
+We can use libraries like Scikit-learn, Pandas, or NumPy for data manipulation and inspection. For example, if we apply PCA, we might reduce the dimensionality of the dataset from 100 features to 10 features while retaining 95% of the variance.
+
+**Step 4: Select top-k models or algorithms**
+
+To select the top-k well-performing models or algorithms, we will evaluate their performance using metrics like precision, recall, F1-score. We can also consider regularization techniques like L1 and L2 regularization to prevent overfitting.
+
+We can use libraries like Scikit-learn, Pandas, or NumPy for data manipulation and inspection. For example, if we choose a random forest algorithm with optimized hyperparameters, we might achieve the following performance metrics:
+
+* Precision: 0.9
+* Recall: 0.8
+* F1-score: 0.85
+
+**Candidate Models/Algorithms**
+
+Based on the above steps, here are three candidate models/algorithms that potentially have optimal performance and complexity:
+
+1. **Random Forest Algorithm**
+	* Number of parameters: 10,000
+	* FLOPs (Floating-point Operations): 100 million
+	* Model size: 50 MB
+	* Training time: 30 minutes
+	* Inference speed: 10 samples per second
+2. **Support Vector Machine (SVM) Algorithm**
+	* Number of parameters: 5,000
+	* FLOPs (Floating-point Operations): 50 million
+	* Model size: 20 MB
+	* Training time: 15 minutes
+	* Inference speed: 20 samples per second
+3. **Gradient Boosting Machine (GBM) Algorithm**
+	* Number of parameters: 15,000
+	* FLOPs (Floating-point Operations): 150 million
+	* Model size: 70 MB
+	* Training time: 45 minutes
+	* Inference speed: 15 samples per second
+
+Note that these performance and complexity metrics are estimates based on the above steps. The actual values may vary depending on the specific dataset and machine learning task.
